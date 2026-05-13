@@ -33,7 +33,8 @@ Technical Features
 -Scalable MERN Architecture
 
 Architecture:
-<img width="1652" height="898" alt="image" src="https://github.com/user-attachments/assets/83e04643-abe9-4a0d-b05f-02bfc8616636" />
+<img width="2000" height="2070" alt="image" src="https://github.com/user-attachments/assets/3a082bda-2007-42dd-8b36-57470a475e96" />
+
 
 Tech Stack:
 React
