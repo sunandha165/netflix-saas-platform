@@ -37,15 +37,27 @@ Architecture:
 
 
 Tech Stack:
-React
-Node.js
-Express
-MongoDB
-Zustand
-Tailwind CSS
-TMDB API
-Vercel
-Render
+React,
+Node.js,
+Express,
+MongoDB,
+Zustand,
+Tailwind CSS,
+TMDB API,
+Vercel,
+Render.
+Future Scalability:
+AI-powered recommendations,
+Microservices architecture,
+Redis caching,
+Video CDN streaming,
+Stripe payment integration,
+Multi-profile support,
+Watch party system,
+Real-time analytics dashboard,
+Kubernetes deployment,
+Docker containerization,
+CI/CD pipelines.
 
 
 
