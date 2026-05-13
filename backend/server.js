@@ -1,6 +1,7 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import path from "path";
+import cors from "cors";
 
 import authRoutes from "./routes/auth.route.js";
 import movieRoutes from "./routes/movie.route.js";
@@ -15,6 +16,13 @@ import myListRoutes from "./routes/myList.route.js";
 import recommendationRoutes from "./routes/recommendation.route.js";
 
 const app = express();
+app.use(
+	cors({
+		origin:
+			"https://netflix-saas-platform.vercel.app",
+		credentials: true,
+	})
+);
 
 const PORT = ENV_VARS.PORT;
 const __dirname = path.resolve();
