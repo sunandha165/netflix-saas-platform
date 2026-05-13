@@ -22,6 +22,8 @@ app.use(
 		origin:
 			"https://netflix-saas-platform.vercel.app",
 		credentials: true,
+		methods: ["GET", "POST", "PUT", "DELETE"],
+		allowedHeaders: ["Content-Type", "Authorization"],
 	})
 );
 
