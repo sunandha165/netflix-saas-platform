@@ -55,6 +55,9 @@ const WatchPage = () => {
 			try {
 				const res = await axios.get(`/api/v1/${contentType}/${id}/details`);
 				setContent(res.data.content);
+				saveToContinueWatching(
+	res.data.content
+);
 			} catch (error) {
 				if (error.message.includes("404")) {
 					setContent(null);
@@ -77,6 +80,24 @@ const WatchPage = () => {
 	const scrollLeft = () => {
 		if (sliderRef.current) sliderRef.current.scrollBy({ left: -sliderRef.current.offsetWidth, behavior: "smooth" });
 	};
+	const saveToContinueWatching = async (
+	movie
+) => {
+	try {
+		await axios.post(
+			"/api/v1/continue-watching",
+			{
+				movie,
+				progress: 20,
+			},
+			{
+				withCredentials: true,
+			}
+		);
+	} catch (error) {
+		console.log(error);
+	}
+};
 	const scrollRight = () => {
 		if (sliderRef.current) sliderRef.current.scrollBy({ left: sliderRef.current.offsetWidth, behavior: "smooth" });
 	};

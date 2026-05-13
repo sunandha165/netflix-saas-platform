@@ -23,6 +23,24 @@ const userSchema = mongoose.Schema({
 		type: Array,
 		default: [],
 	},
+	myList: {
+	type: Array,
+	default: [],
+},
+continueWatching: {
+	type: Array,
+	default: [],
+},
+subscription: {
+	type: String,
+	enum: ["free", "premium"],
+	default: "free",
+},
+recommended: {
+	type: Array,
+	default: [],
+},
+
 });
 
 export const User = mongoose.model("User", userSchema);

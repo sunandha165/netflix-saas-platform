@@ -4,6 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { SMALL_IMG_BASE_URL } from "../utils/constants";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import toast from "react-hot-toast";
 
 const MovieSlider = ({ category }) => {
 	const { contentType } = useContentStore();
@@ -33,6 +34,19 @@ const MovieSlider = ({ category }) => {
 	const scrollRight = () => {
 		sliderRef.current.scrollBy({ left: sliderRef.current.offsetWidth, behavior: "smooth" });
 	};
+	const handleAddToMyList = async (item) => {
+	try {
+		await axios.post(
+			"/api/v1/mylist",
+			{ movie: item },
+			{ withCredentials: true }
+		);
+
+		toast.success("Added to My List");
+	} catch (error) {
+		toast.error(error.response?.data?.message || "Error");
+	}
+};
 
 	return (
 		<div
@@ -54,7 +68,19 @@ const MovieSlider = ({ category }) => {
 								className='transition-transform duration-300 ease-in-out group-hover:scale-125'
 							/>
 						</div>
-						<p className='mt-2 text-center'>{item.title || item.name}</p>
+						<div className='mt-2 flex flex-col items-center gap-2'>
+	<p className='text-center'>{item.title || item.name}</p>
+
+	<button
+		onClick={(e) => {
+			e.preventDefault();
+			handleAddToMyList(item);
+		}}
+		className='bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-sm'
+	>
+		+ My List
+	</button>
+</div>
 					</Link>
 				))}
 			</div>
