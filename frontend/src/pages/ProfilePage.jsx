@@ -1,6 +1,6 @@
 import { useAuthStore } from "../store/authUser";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "../axios";
 import { SMALL_IMG_BASE_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 

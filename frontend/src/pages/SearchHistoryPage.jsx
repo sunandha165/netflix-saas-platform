@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../axios";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import { SMALL_IMG_BASE_URL } from "../utils/constants";
