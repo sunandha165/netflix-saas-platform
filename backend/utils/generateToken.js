@@ -14,21 +14,13 @@ export const generateTokenAndSetCookie = (
 		}
 	);
 
-	res.cookie(
-		"jwt-netflix",
-		token,
-		{
-			httpOnly: true,
-			secure: true,
-			sameSite: "None",
-			maxAge:
-				15 *
-				24 *
-				60 *
-				60 *
-				1000,
-		}
-	);
+	res.cookie("jwt-netflix", token, {
+	httpOnly: true,
+	secure: true,
+	sameSite: "None",
+	path: "/",
+	maxAge: 15 * 24 * 60 * 60 * 1000,
+});
 
 	return token;
 };
