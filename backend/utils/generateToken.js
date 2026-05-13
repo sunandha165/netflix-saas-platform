@@ -20,7 +20,7 @@ export const generateTokenAndSetCookie = (
 		{
 			httpOnly: true,
 			secure: true,
-			sameSite: "none",
+			sameSite: "None",
 			maxAge:
 				15 *
 				24 *
