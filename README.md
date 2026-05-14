@@ -36,6 +36,10 @@ Architecture:
 <img width="2000" height="2070" alt="image" src="https://github.com/user-attachments/assets/3a082bda-2007-42dd-8b36-57470a475e96" />
 
 
+<img width="8192" height="4373" alt="image" src="https://github.com/user-attachments/assets/912bfa9d-4edd-4339-90e7-dc40759063ce" />
+
+
+
 Tech Stack:
 React,
 Node.js,
