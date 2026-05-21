@@ -13,54 +13,89 @@ Backend: https://netflix-saas-platform.onrender.com.
 GitHub: https://github.com/sunandha165/netflix-saas-platform.
 
 User Features:
+
 -JWT Authentication
+
 -My List
+
 -Continue Watching
+
 -Personalized Recommendations
+
 -Search Movies & TV Shows
+
 -Responsive Mobile UI
+
 -TMDB API Integration
+
 -Watch Trailers
+
 -Subscription Plans
 
-Technical Features
+Technical Features:
+
 -Protected Routes
+
 -Zustand State Management
+
 -REST APIs
+
 -Cookie-based Authentication
+
 -Production Deployment
+
 -Cross-Origin Secure Cookies
+
 -Scalable MERN Architecture
 
 Architecture:
 <img width="2000" height="2070" alt="image" src="https://github.com/user-attachments/assets/3a082bda-2007-42dd-8b36-57470a475e96" />
 
 
-<img width="8192" height="4373" alt="image" src="https://github.com/user-attachments/assets/912bfa9d-4edd-4339-90e7-dc40759063ce" />
-
 
 
 Tech Stack:
-React,
-Node.js,
-Express,
-MongoDB,
-Zustand,
-Tailwind CSS,
-TMDB API,
-Vercel,
+
+React
+
+Node.js
+
+Express
+
+MongoDB
+
+Zustand
+
+Tailwind CSS
+
+TMDB API
+
+Vercel
+
 Render.
+
 Future Scalability:
-AI-powered recommendations,
-Microservices architecture,
-Redis caching,
-Video CDN streaming,
-Stripe payment integration,
-Multi-profile support,
-Watch party system,
-Real-time analytics dashboard,
-Kubernetes deployment,
-Docker containerization,
+
+AI-powered recommendations
+
+Microservices architecture
+
+Redis caching
+
+Video CDN streaming
+
+Stripe payment integration
+
+Multi-profile support
+
+Watch party system
+
+Real-time analytics dashboard
+
+Kubernetes deployment
+
+Docker containerization
+
 CI/CD pipelines.
 
 
