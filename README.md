@@ -9,7 +9,9 @@
 A full-stack MERN streaming platform inspired by Netflix, built with scalable architecture, secure authentication, personalized recommendations, subscription systems, and production deployment.
 
 Frontend: https://vercel.com/sunandha165s-projects/netflix-saas-platform.
+
 Backend: https://netflix-saas-platform.onrender.com.
+
 GitHub: https://github.com/sunandha165/netflix-saas-platform.
 
 User Features:
